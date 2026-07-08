@@ -26,9 +26,9 @@ export function Hero() {
       <h1 className="sr-only">MVP Built Bullies</h1>
 
       <div className="pb-16 mt-auto text-center relative">
-        <Pill className="mb-6">PREMIER AMERICAN BULLIES</Pill>
-        <p className="font-mono text-sm sm:text-base text-foreground/60 text-balance mt-2 max-w-[440px] mx-auto">
-          Champion bloodlines. Built, not born.
+        <Pill className="mb-6">XL AMERICAN BULLIES</Pill>
+        <p className="font-mono text-sm sm:text-base tracking-[0.25em] uppercase text-gold text-balance mt-2 max-w-[560px] mx-auto">
+          Strength. Structure. Legacy.
         </p>
 
         <Link className="contents max-sm:hidden" href="/#contact">

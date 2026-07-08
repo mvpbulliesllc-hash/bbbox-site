@@ -68,3 +68,23 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* Metallic text treatments matched to the hero logo */
+.text-chrome {
+  background: linear-gradient(180deg, #ffffff 0%, #e8e8ec 30%, #9a9aa2 50%, #f4f4f7 62%, #6f6f78 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gold {
+  background: linear-gradient(180deg, #fff3c4 0%, #f5d061 35%, #b4801c 55%, #ffe9a8 70%, #8a5f10 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(245, 208, 97, 0.9) 50%, transparent 100%);
+}
