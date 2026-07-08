@@ -17,8 +17,8 @@ export function Hero() {
         <Image
           src="/mvp-logo.png"
           alt="MVP Built Bullies"
-          width={1656}
-          height={931}
+          width={1672}
+          height={941}
           priority
           className="w-[min(88vw,960px)] h-auto mix-blend-screen select-none"
         />
