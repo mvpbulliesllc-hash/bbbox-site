@@ -20,18 +20,37 @@ export const Header = () => {
             </Link>
           ))}
         </nav>
-        <LiquidGlassCard
-          draggable={false}
-          borderRadius="100px"
-          blurIntensity="md"
-          shadowIntensity="xs"
-          glowIntensity="none"
-          className="max-lg:hidden bg-white/5"
-        >
-          <Link className="uppercase inline-block px-5 py-2 transition-colors ease-out duration-150 font-mono text-primary hover:text-primary/80" href="/#sign-in">
-            Sign In
-          </Link>
-        </LiquidGlassCard>
+        <div className="max-lg:hidden flex items-center gap-x-3">
+          <LiquidGlassCard
+            draggable={false}
+            borderRadius="100px"
+            blurIntensity="md"
+            shadowIntensity="xs"
+            glowIntensity="none"
+            className="bg-white/5"
+          >
+            <Link className="uppercase inline-block px-5 py-2 transition-colors ease-out duration-150 font-mono text-foreground/60 hover:text-foreground" href="/#sign-in">
+              Sign In
+            </Link>
+          </LiquidGlassCard>
+          <LiquidGlassCard
+            draggable={false}
+            borderRadius="100px"
+            blurIntensity="md"
+            shadowIntensity="xs"
+            glowIntensity="none"
+            className="bg-white/5"
+          >
+            <a
+              className="uppercase inline-block px-5 py-2 transition-colors ease-out duration-150 font-mono text-primary hover:text-primary/80"
+              href="https://mvpbullies.site"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Admin
+            </a>
+          </LiquidGlassCard>
+        </div>
         <MobileMenu />
       </header>
     </div>
