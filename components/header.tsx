@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MobileMenu } from "./mobile-menu";
+import { LiquidGlassCard } from "./ui/liquid-weather-glass";
 
 export const Header = () => {
   return (
@@ -19,9 +20,18 @@ export const Header = () => {
             </Link>
           ))}
         </nav>
-        <Link className="uppercase max-lg:hidden transition-colors ease-out duration-150 font-mono text-primary hover:text-primary/80" href="/#sign-in">
-          Sign In
-        </Link>
+        <LiquidGlassCard
+          draggable={false}
+          borderRadius="100px"
+          blurIntensity="md"
+          shadowIntensity="xs"
+          glowIntensity="none"
+          className="max-lg:hidden bg-white/5"
+        >
+          <Link className="uppercase inline-block px-5 py-2 transition-colors ease-out duration-150 font-mono text-primary hover:text-primary/80" href="/#sign-in">
+            Sign In
+          </Link>
+        </LiquidGlassCard>
         <MobileMenu />
       </header>
     </div>

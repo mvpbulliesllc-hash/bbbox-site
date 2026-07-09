@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { GL } from "./gl";
 import { Pill } from "./pill";
-import { Button } from "./ui/button";
+import { LiquidMetalButton } from "./liquid-metal-button";
 import { useState } from "react";
 
 export function Hero() {
   const [hovering, setHovering] = useState(false);
+  const router = useRouter();
   return (
     <div className="flex flex-col h-svh justify-between">
       <GL hovering={hovering} />
@@ -31,25 +32,14 @@ export function Hero() {
           Strength. Structure. Legacy.
         </p>
 
-        <Link className="contents max-sm:hidden" href="/#contact">
-          <Button
-            className="mt-10"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-          >
-            [Contact Us]
-          </Button>
-        </Link>
-        <Link className="contents sm:hidden" href="/#contact">
-          <Button
-            size="sm"
-            className="mt-10"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-          >
-            [Contact Us]
-          </Button>
-        </Link>
+        <div className="mt-10 flex justify-center">
+          <LiquidMetalButton
+            label="[CONTACT US]"
+            width={170}
+            onHoverChange={setHovering}
+            onClick={() => router.push("/#contact")}
+          />
+        </div>
       </div>
     </div>
   );
