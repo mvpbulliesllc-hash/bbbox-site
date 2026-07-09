@@ -1,0 +1,5 @@
+:HL["/bbbox-site/_next/static/chunks/04d6gaq-r4m.5.css","style"]
+:HL["/bbbox-site/_next/static/media/797e433ab948586e-s.p.08e28id.o-okb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/bbbox-site/_next/static/media/Sentient_Extralight-s.p.0pre8~gjh2eqb.woff","font",{"crossOrigin":"","type":"font/woff"}]
+:HL["/bbbox-site/_next/static/media/Sentient_LightItalic-s.p.1490ov4_p886z.woff","font",{"crossOrigin":"","type":"font/woff"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"7UW2s21uxURRP9v6Liu_B"}

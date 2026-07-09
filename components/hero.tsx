@@ -15,7 +15,7 @@ export function Hero() {
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none px-4">
         <Image
-          src="/mvp-logo.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/mvp-logo.png`}
           alt="MVP Built Bullies"
           width={1672}
           height={941}

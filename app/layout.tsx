@@ -9,6 +9,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const sentient = localFont({
+  src: [
+    { path: "./fonts/Sentient-Extralight.woff", weight: "200", style: "normal" },
+    { path: "./fonts/Sentient-LightItalic.woff", weight: "300", style: "italic" },
+  ],
+  variable: "--font-sentient-local",
+});
+
 export const metadata: Metadata = {
   title: "MVP Built Bullies",
   description: "MVP Built Bullies — premier American Bully program",
@@ -23,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} antialiased`}
+        className={`${geistMono.variable} ${sentient.variable} antialiased`}
         suppressHydrationWarning
       >
         <Header />

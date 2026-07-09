@@ -6,7 +6,7 @@ export function VideoSection() {
       <div className="gold-divider w-full" />
       <video
         className="block w-full h-auto"
-        src="/mvp-film.mp4"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/mvp-film.mp4`}
         autoPlay
         muted
         loop
