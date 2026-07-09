@@ -70,14 +70,23 @@ export const MobileMenu = ({ className }: MobileMenuProps) => {
               </Link>
             ))}
 
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col space-y-2">
               <Link
                 href="/#sign-in"
                 onClick={handleLinkClick}
-                className="inline-block text-xl font-mono uppercase text-primary transition-colors ease-out duration-150 hover:text-primary/80 py-2"
+                className="inline-block text-xl font-mono uppercase text-foreground/60 transition-colors ease-out duration-150 hover:text-foreground py-2"
               >
                 Sign In
               </Link>
+              <a
+                href="https://mvpbullies.site"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleLinkClick}
+                className="inline-block text-xl font-mono uppercase text-primary transition-colors ease-out duration-150 hover:text-primary/80 py-2"
+              >
+                Admin
+              </a>
             </div>
           </nav>
         </Dialog.Content>
